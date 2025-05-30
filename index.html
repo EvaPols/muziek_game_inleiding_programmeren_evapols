@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="images/frog1.png">
+    <title>Muziek game!</title>
+</head>
+<body>
+    <section class="characterkeuze">
+        <h1>Kies een character!</h1>
+        <div class="characterbuttons">
+            <div class="lord1">
+                <img src="images/frog1.png" alt="frog choice 1">                <!--https://images.app.goo.gl/pqkJaGBX2hVGSUkK9-->
+                <img src="images/button1.png" alt="Button optie 1">
+            </div>
+            <div class="lord2">
+                <img src="images/frog2.png" alt="frog choice 2">                <!--https://images.app.goo.gl/bfJBA7MbNWvxq4Kz9-->
+                <img src="images/button2.png" alt="Button optie 2">
+            </div>
+            <div class="lord3">
+                <img src="images/frog3.png" alt="frog choice 3">                <!--https://images.app.goo.gl/WdU74iA16WpocScu6-->
+                <img src="images/button3.png" alt="Button optie 3">
+            </div>
+        </div>
+    </section>
+    <!--Lijst met noten plaatjes-->
+    <section id="gekozenLord" class="verberg">
+        <h1>Gekozen Lord</h1>
+        <img id="lordPlaatje" src="images/" alt="Gekozen character"> 
+    </section>
+    <section id="gameSection" class="nootc">
+        <div class="tekstnoten">
+            <h1 class="probeerOpnieuw">Welke noot is dit?</h1>
+            <p >Aantal keer geraden:</p>
+            <p class="foutGeraden">0</p>
+            <img id="nootImage" src="images/notenbalkc.png" alt="Noot C">
+        </div>
+            <div class="buttonsnoten">
+                <audio id="audioc">                                      
+                <source src="audio/nootc.mp4" type="audio/mpeg">
+                </audio>
+                <audio id="audiod">
+                <source src="audio/nootd.mp4" type="audio/mpeg">
+                </audio>
+                <audio id="audioe">
+                <source src="audio/noote.mp4" type="audio/mpeg">
+                </audio>
+                <audio id="audiof">
+                <source src="audio/nootf.mp4" type="audio/mpeg">
+                </audio>
+                <audio id="audiofis">
+                <source src="audio/nootfis.mp4" type="audio/mpeg">
+                </audio>
+                <img id="audionootC" class="buttona" src="images/nootc.png" alt="button van de noot C">
+                <img id="audionootD" class="buttonb" src="images/nootd.png" alt="button van de noot D">
+                <img id="audionootE" class="buttonc" src="images/noote.png" alt="button van de noot E">
+                <img id="audionootF" class="buttonf" src="images/nootf.png" alt="button van de noot F">
+                <img id="audionootFis" class="buttonfis" src="images/nootfis.png" alt="button van de noot Fis">
+            </div>
+    </section>
+    <div class="healthbar">
+        <div class="healthflex">
+            <p>Healthbar</p>
+            <progress value="100" max="100" id="health"></progress>
+            <p>Aantal punten = <span id="aantalPunten">0</span></p>
+        </div>
+    </div>
+    <!--https://images.app.goo.gl/NbNK727jvzXXEcV99-->
+    <section id="winScreen" class="verberg">
+        <div class="einde">
+            <h1>Top gedaan</h1>
+            <img src="images/eindplaatje.png" alt="">
+        </div>
+    </section>
+    <script src="javascript/javascript.js"></script>
+</body>
+</html>
