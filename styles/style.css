@@ -1,0 +1,95 @@
+body {
+    background-repeat: no-repeat;                                 /*https://www.w3schools.com/cssref/css3_pr_background-size.php*/ /*https://www.w3schools.com/cssref/playdemo.php?filename=playcss_background-repeat&preval=no-repeat*/
+    background-size: 2050px 1200px;
+    background-image: url(../images/pngtree-simple-and-fresh-background-for-music-picture-image_2004646.png)  /*https://pngtree.com/freebackground/simple-and-fresh-background-for-music_2004646.html*/
+}
+
+h1 {
+    text-align: center;
+    margin: 5%;
+    font-size: 3em;
+}
+
+.characterbuttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.lord1 {
+    display: flex;
+    flex-direction: column;
+    margin: 4%;
+}
+
+.lord2 {
+    display: flex;
+    flex-direction: column;
+    margin: 4%;
+}
+
+.lord3 {
+    display: flex;
+    flex-direction: column;
+    margin: 4%;
+}
+
+#gekozenLord {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 100px;
+    height: auto;
+}
+
+#gekozenLord img {
+    width: 100%;
+}
+
+.tekstnoten {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttonsnoten {
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+.nootc {
+    display: none;
+}
+
+.healthbar {
+    display: none;
+}
+
+.healthflex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 140%;
+}
+
+.buttonf {
+    display: none;
+}
+
+.buttonfis {
+    display: none;
+}
+
+.verberg {
+    display: none;
+}
+
+.einde {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 20%;
+    margin: auto;
+    min-height: 80vh;
+}
